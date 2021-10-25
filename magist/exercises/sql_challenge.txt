@@ -1,0 +1,45 @@
+
+Data import:
+- Download the Magist_dump_sql.zip file and unzip it.
+- On MySQL Workbench, connect to a local instance.
+- Go to Server > Data Import
+- Select "Import from Self-Contained File" and write the path to the file you downloaded.
+- Click on "Start Import"
+
+Data description:
+This database belongs to a Brazilian e-commerce marketplace that connects sellers with customers.
+Whenever an order is placed:
+- if the customer is new, a customer_id is generated and a row is inserted on the customers table.
+- an order_id is generated, and row is inserted on the order table.
+- as many rows as different products being sold are inserted on the order-items table.
+- if a payment is made, a row is inserted on the payments table
+
+Use the schema pdf to understand how tables relate to each other.
+
+
+Answer the questions below, as if they were asked by a Manager to inform strategic decision making.
+Provide the SQL code you used to answer them and a written answer with any needed explanation.
+
+
+In relation to the products:
+
+How many different products are being sold?
+What are the most popular categories?
+How popular are tech products compared to other categories?
+What’s the average price of the products being sold?
+Are expensive tech products popular?
+What’s the average monthly revenue of Magist’s sellers?
+
+-----
+In relation to the sellers:
+
+- How many sellers are there?
+Making any assumptions you need, calculate the revenue that sellers are making:
+  - What’s the average revenue of all the sellers?
+  - What’s the average revenue of sellers that sell tech products?
+
+-----
+In relation to the delivery time:
+  - What’s the average time between the order being placed and the product being delivered?
+  - How many orders are delivered on time vs orders delivered with a delay?
+  - Is there any pattern for delayed orders, e.g. big products being delayed more often?
